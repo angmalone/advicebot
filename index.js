@@ -9,7 +9,7 @@ app.get("/", function(req, res) {
 });
 
 const bot = new SlackBot({
-  token: "xoxb-424177423877-425400381830-UXQrg53NjASazBCO4V35ot11",
+  token: "xoxb-4718169364-446357669345-C6tOBnuRmGZAl7saYvwNjNLe",
   name: "lil pump"
 });
 
@@ -18,7 +18,7 @@ bot.on("start", () => {
     icon_emoji: ":bomb:"
   };
 
-  bot.postMessageToChannel("botdemo", "esskeetit", params);
+  bot.postMessageToChannel("random", "esskeetit", params);
 });
 
 bot.on("error", err => console.log(err));
@@ -92,7 +92,7 @@ function handleMessage(message) {
             icon_emoji: ":bomb:"
           };
 
-          bot.postMessageToChannel("botdemo", `Tip of the day: ${tip}`, params);
+          bot.postMessageToChannel("random", `Tip of the day: ${tip}`, params);
         }
       });
   }
