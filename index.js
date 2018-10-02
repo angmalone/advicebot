@@ -71,7 +71,7 @@ function handleMessage(message) {
               };
 
               bot.postMessageToChannel(
-                "botdemo",
+                "announcements",
                 `Tip of the day: ${tip}`,
                 params
               );
