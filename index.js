@@ -42,7 +42,7 @@ function handleMessage(message) {
   var rule = new schedule.RecurrenceRule();
   rule.dayOfWeek = [0, new schedule.Range(1, 5)];
   rule.hour = 9;
-  rule.minute = 30;
+  rule.minute = 45;
   schedule.scheduleJob(rule, function() {
     retrieveTip();
   });
