@@ -18,7 +18,7 @@ bot.on("start", () => {
     icon_emoji: ":bomb:"
   };
 
-  bot.postMessageToChannel("random", "esskeetit", params);
+  /*bot.postMessageToChannel("random", "esskeetit", params);*/
 });
 
 bot.on("error", err => console.log(err));
@@ -92,7 +92,11 @@ function handleMessage(message) {
             icon_emoji: ":bomb:"
           };
 
-          bot.postMessageToChannel("random", `Tip of the day: ${tip}`, params);
+          bot.postMessageToChannel(
+            "announcements",
+            `Tip of the day: ${tip}`,
+            params
+          );
         }
       });
   }
