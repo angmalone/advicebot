@@ -41,8 +41,8 @@ function handleMessage(message) {
   //set to 9:30am mon-fri
   var rule = new schedule.RecurrenceRule();
   rule.dayOfWeek = [0, new schedule.Range(1, 5)];
-  rule.hour = 9;
-  rule.minute = 45;
+  rule.hour = 10;
+  rule.minute = 00;
   schedule.scheduleJob(rule, function() {
     retrieveTip();
   });
