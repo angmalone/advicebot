@@ -18,7 +18,7 @@ bot.on("start", () => {
     icon_emoji: ":bomb:"
   };
 
-  bot.postMessageToChannel("random", "bottest", params);
+  bot.postMessageToChannel("bottest", "esskeetit", params);
 });
 
 bot.on("error", err => console.log(err));
