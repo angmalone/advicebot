@@ -71,7 +71,7 @@ function handleMessage(message) {
               };
 
               bot.postMessageToChannel(
-                "announcements",
+                "bottest",
                 `Tip of the day: ${tip}`,
                 params
               );
@@ -92,11 +92,7 @@ function handleMessage(message) {
             icon_emoji: ":bomb:"
           };
 
-          bot.postMessageToChannel(
-            "announcements",
-            `Tip of the day: ${tip}`,
-            params
-          );
+          bot.postMessageToChannel("bottest", `Tip of the day: ${tip}`, params);
         }
       });
   }
