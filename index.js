@@ -9,7 +9,7 @@ app.get("/", function(req, res) {
 });
 
 const bot = new SlackBot({
-  token: "xoxb-4718169364-446357669345-C6tOBnuRmGZAl7saYvwNjNLe",
+  token: "",
   name: "lil pump"
 });
 
